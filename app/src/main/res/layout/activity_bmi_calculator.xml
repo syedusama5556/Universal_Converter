@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".BmiCalculator">
+
+
+    <TextView
+        android:id="@+id/healthtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Health Pending"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <TextView
+        android:id="@+id/bmitxt"
+        android:layout_width="223dp"
+        android:layout_height="176dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/heart"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="BMI Index Equals"
+        android:textColor="#ed7167"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/agetxt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="104dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:hint="Age"
+        android:onClick="age"
+        android:textColor="#7e7a7a"
+        android:textSize="20dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/heighttxt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/agetxt"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:hint="Height"
+        android:onClick="height"
+        android:textColor="#7e7a7a"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/bmiSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="167dp"
+        android:entries="@array/bmiHeight">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/weighttxt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/agetxt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:hint="Weight (kg)"
+        android:onClick="weight"
+        android:textColor="#7e7a7a"
+        android:textSize="20dp" />
+
+
+    <ImageView
+        android:id="@+id/butmale"
+        android:layout_width="73dp"
+        android:layout_height="74dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:background="@drawable/male"
+        android:clickable="false"
+        android:paddingTop="55dp"
+        android:textColor="#000"
+        android:textSize="12dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butmale"
+        android:layout_alignStart="@+id/butfemale"
+        android:layout_alignLeft="@+id/butfemale"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butmale"
+            android:layout_toStartOf="@+id/heighttxt"
+            android:layout_toLeftOf="@+id/heighttxt"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/rd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butmale"
+            android:layout_alignStart="@+id/butmale"
+            android:layout_alignLeft="@+id/butmale"
+            android:layout_marginLeft="90dp"
+            android:text="Male" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/butfemale"
+        android:layout_width="72dp"
+        android:layout_height="82dp"
+
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_toStartOf="@+id/heighttxt"
+        android:layout_toLeftOf="@+id/heighttxt"
+        android:background="@drawable/female"
+        android:paddingTop="55dp"
+        android:textColor="#000"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/refresh2"
+        android:onClick="refresh" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heighttxt"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="20dp"
+
+            >
+
+            <Button
+                android:id="@+id/calBmi"
+                android:layout_width="320dp"
+                android:layout_height="85dp"
+                android:background="@color/colorPrimaryDark"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:shadowRadius="12"
+                android:text="Calculate BMI"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
+                android:textSize="22dp"
+
+                />
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

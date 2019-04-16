@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrencyStuff.CurrencyOld">
+
+    <!--<ImageView-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/comingsoon">-->
+
+
+    <!--</ImageView>-->
+
+    <!--&lt;!&ndash;<com.google.android.gms.ads.AdView-->
+    <!--xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/adView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--ads:adSize="BANNER"-->
+    <!--ads:adUnitId="ca-app-pub-7307921528560396/7319297060" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button-->
+    <!--android:layout_width="107dp"-->
+    <!--android:layout_height="67dp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignStart="@+id/adView"-->
+    <!--android:layout_marginTop="103dp"-->
+    <!--android:onClick="loadVideoAdd"-->
+    <!--android:text="Video Add"-->
+    <!--android:layout_alignLeft="@+id/adView" />&ndash;&gt;-->
+
+    <ListView
+        android:id="@+id/lvCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</RelativeLayout>

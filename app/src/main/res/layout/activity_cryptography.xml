@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Cryptography">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:elevation="15dp"
+            android:minWidth="320dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Encode/Decode String"
+                android:textColor="#ffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:elevation="15dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/encodetxt"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:hint="Enter Text To Encode/Decode"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:textColor="#FF6C6C6C"
+
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/encode"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorPrimaryDark"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:shadowRadius="12"
+                android:text="Encode"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/decode"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorPrimaryDark"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:shadowRadius="12"
+                android:text="Decode"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.844"
+                app:layout_constraintStart_toEndOf="@+id/encode"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:elevation="15dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/decodetxt"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:editable="false"
+                android:hint="Result Will Be Displayed Here"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:textColor="#FF6C6C6C"
+
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/copybtn"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#FF4081"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:shadowRadius="12"
+                android:text="Copy"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>
