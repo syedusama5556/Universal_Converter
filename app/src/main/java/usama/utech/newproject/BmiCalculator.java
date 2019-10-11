@@ -6,7 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
@@ -66,7 +66,7 @@ public class BmiCalculator extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        android.support.v7.app.AlertDialog.Builder exitMessage = new android.support.v7.app.AlertDialog.Builder(this);
+        androidx.appcompat.app.AlertDialog.Builder exitMessage = new androidx.appcompat.app.AlertDialog.Builder(this);
         exitMessage.setTitle("Exit");
         exitMessage.setMessage("Are You Sure You Want To Exit To The MainMenu Your Values Will Be Lost ?");
         exitMessage.setPositiveButton("Yes", new DialogInterface.OnClickListener() {

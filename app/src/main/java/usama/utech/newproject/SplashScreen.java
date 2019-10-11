@@ -4,14 +4,10 @@ package usama.utech.newproject;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
-
-import usama.utech.newproject.MainActivity;
-import usama.utech.newproject.R;
 
 
 public class SplashScreen extends AppCompatActivity {

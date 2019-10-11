@@ -8,8 +8,8 @@ import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -27,7 +27,6 @@ import java.util.Random;
 
 import usama.utech.newproject.CurrencyStuff.CurrencyOld;
 import usama.utech.newproject.RulerStuff.Ruler;
-import usama.utech.newproject.SoundMeterStuff.MainActivitySound;
 
 public class Temprature extends AppCompatActivity {
 

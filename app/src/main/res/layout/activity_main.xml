@@ -9,14 +9,14 @@
     android:background="#ffffff"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:weightSum="10"
+    android:weightSum="15"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textGrid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="9"
+        android:layout_weight="14"
         android:background="#ffffff"
         android:text="UNIVERSAL CONVERTER"
         android:textAlignment="center"
@@ -25,13 +25,13 @@
 
         />
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="#ffffff">
 
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
