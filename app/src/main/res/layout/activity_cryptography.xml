@@ -40,7 +40,7 @@
             android:layout_margin="20dp"
             android:elevation="15dp">
 
-            <com.rengwuxian.materialedittext.MaterialEditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/encodetxt"
                 android:layout_width="320dp"
                 android:layout_height="150dp"
@@ -49,10 +49,9 @@
                 android:hint="Enter Text To Encode/Decode"
                 android:padding="5dp"
                 android:textAllCaps="false"
-                android:textColor="#FF6C6C6C"
+                android:textColor="#FF6C6C6C">
 
-                app:met_floatingLabel="highlight"
-                app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+            </androidx.appcompat.widget.AppCompatEditText>
         </androidx.cardview.widget.CardView>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -114,7 +113,7 @@
             android:layout_margin="20dp"
             android:elevation="15dp">
 
-            <com.rengwuxian.materialedittext.MaterialEditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/decodetxt"
                 android:layout_width="320dp"
                 android:layout_height="150dp"
@@ -125,9 +124,7 @@
                 android:padding="5dp"
                 android:textAllCaps="false"
                 android:textColor="#FF6C6C6C"
-
-                app:met_floatingLabel="highlight"
-                app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+ />
         </androidx.cardview.widget.CardView>
 
         <androidx.constraintlayout.widget.ConstraintLayout

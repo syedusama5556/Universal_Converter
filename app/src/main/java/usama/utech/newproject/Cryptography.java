@@ -7,18 +7,19 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatEditText;
+
 import android.text.TextUtils;
 import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.rengwuxian.materialedittext.MaterialEditText;
 
 
 public class Cryptography extends AppCompatActivity {
 
-    MaterialEditText encodetxt, decodetxt;
+    AppCompatEditText encodetxt, decodetxt;
     Button encodbtn, decodebtn, copy;
 
 
@@ -27,8 +28,8 @@ public class Cryptography extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cryptography);
 
-        encodetxt = (MaterialEditText) findViewById(R.id.encodetxt);
-        decodetxt = (MaterialEditText) findViewById(R.id.decodetxt);
+        encodetxt = (AppCompatEditText) findViewById(R.id.encodetxt);
+        decodetxt = (AppCompatEditText) findViewById(R.id.decodetxt);
 
         encodbtn = (Button) findViewById(R.id.encode);
         decodebtn = (Button) findViewById(R.id.decode);
